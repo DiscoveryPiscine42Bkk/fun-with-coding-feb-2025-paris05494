@@ -1,0 +1,32 @@
+.outside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label h1 {
+    text-align: center;
+}
+
+img {
+    margin-top: 2%;
+    max-width: 50%;
+    display: flex;
+}
+
+select {
+    border-radius: 20px;
+}
+
+body:has(#menu option[value="0"]:checked) #sandwich {
+    content: url("https://www.sargento.com/assets/Uploads/Recipe/Image/SRG_TunaMonteCristo_101599__FillWzExNzAsNTgzXQ.jpg");
+}
+
+body:has(#menu option[value="2"]:checked) #sandwich {
+    content: url("https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2022/06/club-sandwich.jpg?im=AspectCrop=(16,9);");
+}
+
+body:has(#menu option[value="3"]:checked) #sandwich {
+    content: url("https://i.ytimg.com/vi/LV80k0Bvmq4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDsGoRGwFzbO69hipCDpOTrR5PWKQ");
+}
